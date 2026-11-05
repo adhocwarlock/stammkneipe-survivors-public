@@ -1,0 +1,109 @@
+export default {
+  "name": "store_dm",
+  "size": [
+    64,
+    48
+  ],
+  "origin": [
+    0,
+    0
+  ],
+  "palette": {
+    "a": "#d23a3a",
+    "r": "#d14fa8",
+    "z": "#bfd0e0",
+    "6": "#4a4e63",
+    "7": "#656b80",
+    "8": "#8b92a6",
+    "g": "#4f8a66",
+    "l": "#d0692a",
+    "L": "#f5a043",
+    "m": "#ffd27a",
+    "M": "#fff3c4",
+    "n": "#1f2240",
+    "o": "#2e3a5e",
+    "p": "#475a85",
+    "I": "#8a6a3a",
+    "K": "#c29a52",
+    "N": "#e8c77a",
+    "Y": "#ffe53a",
+    "Q": "#c07a78",
+    "s": "#4a1f2a",
+    "t": "#7a3033",
+    "u": "#a8483d",
+    "v": "#cf6f55",
+    "V": "#8e8a94",
+    "w": "#c4bdb0",
+    "W": "#efe6d0"
+  },
+  "meta": {
+    "door": {
+      "x": 24,
+      "w": 16
+    },
+    "sign": {
+      "x": 20,
+      "y": 2,
+      "w": 25,
+      "h": 16,
+      "color": "#ffe53a"
+    }
+  },
+  "anims": {
+    "default": {
+      "fps": 1,
+      "frames": [
+        [
+          "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+          "NNIKKKKKKKKKKKKKKKKKKWWWWWWWWWWWWWWWWWWWWWWKKKKKKKKKKKKKKKNKKNNI",
+          "NKIKKKKKKKKKKKKKKKKKWWWWWWWWWWWWWWWWWWWWWWWwIKKNKKKKKKKKKKKKKNKI",
+          "NKIvvvvvvvvuKKKKKKKKWWWWWWWWnnWWWWWWWWWWWWWwIKKKKKKKvvvvvvvvuNKI",
+          "IIKvlllwllltKKKKKKKKWWWWWWWWnnWWWWWWWWWWWWWwIKKKKKKKvnnnwnnntIII",
+          "NIKvlLLwlLLtKNKKKKKKWWWWWWonnnWnnnnnnnWWWWWwIKKKKKKKvnopwnontKNI",
+          "KIKvlLmwlmLtKKKKKKKKWWWWWonWnnWonWnWnnWWWWWwIKKKKKKKvnnownnntKNI",
+          "KIKvwwwwwwwtKKKKKKKKWWWWWonWnnWonWnWnnWWWWWwIKKKKKKKvwwwwwwwtNNI",
+          "IKKvQLLwlLLtKKKKKKKKWWWWWonWnnWonWnWnnWWWWWwIKKKKKKKvnonwnnntKII",
+          "NNIvQmmwlmLtKKKKKKKKWWWWWWnnnnWnnWnWnnWWWWWwIKKKKKKKvnnnwnpntNNI",
+          "NKIvQmMwlmLtKKKKKKKKWWWYYYWWWWWWWWWWWYYYWWWwIKKKKKKKvnnnwpontNKI",
+          "NKIvQmmwlLLtKKKKKKKKWWWYYYYYYYYYYYYYYYYYWWWwIKKKKKKKvnnnwnnntNKI",
+          "IIKvQLLwlLLtKKKKKKKKWWWWWaYYYYYYYYYYYaWWWWWwIKKKKKKKvnnnwnnntIII",
+          "NIKvlLLwllLtKKKKKKKKWWWWWWaaaaaaaaaaaWWWWWWwIKKKKKKKvnnnwnnntKNI",
+          "KIvvvvvvvvvvuKKKKKKKWWWWWWWWWWWWWWWWWWWWWWWwIKKKKKKvvvvvvvvvvuNI",
+          "KItttttttttttKKKKKKKKwwwwwwwwwwwwwwwwwwwwwwKIKKKKKKtttttttttttNI",
+          "IKKKKKKKKKKKKKKKKKKNKIIIIIIIIIIIIIIIIIIIIIIIKKKKKKKKKKKKKKKKKKII",
+          "NNIKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKNKKKKKKKKKKKKKKKKNNI",
+          "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+          "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+          "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+          "nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+          "NK88888888888888888888KK8888888888888888KK88888888888888888888KI",
+          "NK8MMMMMMMMMMMMMMMMMM8KK86a6666666666668KK8MMMMMMMMMMMMMMMMMM8KI",
+          "NK8MMMMMMMMMMMMMMMMMM8KK8666666666666668KK8MMMMMMMMMMMMMMMMMM8KI",
+          "II8MMMMMMMMMMMMMMMMMM8II8MMMMMM78MMMMMM8II8MMMMMMMMMMMMMMMMMM8II",
+          "NN8WwWaWzWrWmWgWwWaWW8NN8MMMMMM78MMMMMM8NN8WwWaWzWrWmWgWwWaWW8NI",
+          "NK8WwWaWzWrWmWgWwWaWW8KK8WWWWWW78WWWWWW8KK8WwWaWzWrWmWgWwWaWW8KI",
+          "NK8VVVVVVVVVVVVVVVVVV8KK8WWWWWW78WWWWWW8KK8VVVVVVVVVVVVVVVVVV8KI",
+          "II8WWWWWWWWWWWWWWWWWW8II8WWWWWW78WWWWWW8II8WWWWWWWWWnnnnnnWWW8II",
+          "NN8WWWWWWWWWWWWWWWWWW8NN8WWWWWW78WWWWWW8NN8WWWWWWWWWnYYYYnWWW8NI",
+          "NK8WWWWWWWWWWWWWWWWWW8KK8WWWWWW78WWWWWW8KK8WWWWWWWWWnYnYYnWWW8KI",
+          "NK8WwWaWzWrWmWgWwWaWW8KK8WWWWWW78WWWWWW8KK8WwWaWzWrWnYYYYnaWW8KI",
+          "II8WwWaWzWrWmWgWwWaWW8II8WWWWWW78WWWWWW8II8WwWaWzWrWnnnnnnaWW8II",
+          "NN8VVVVVVVVVVVVVVVVVV8NN8WWWWWW78WWWWWW8NN8VVVVVVVVVnaaaanVVV8NI",
+          "NK8WWWWWWWWWWWWWWWWWW8KK8WaWzWY78WrWwWW8KK8WWWWWWWWWnnnnnnWWW8KI",
+          "NK8WWWWWWWWWWWWWWWWWW8KK8WVVVVV78VVVVVW8KK8WWWWWWWWWnnnnnnWWW8KI",
+          "II8WWWWWWWWWWWWWWWWWW8II8zzzzzz78zzzzzz8II8WWWWWWWWWWWWWWWWWW8II",
+          "NN8WwWaWzWrWmWgWwWaWW8NN8zzzzzz78zzzzzz8NN8WwWaWzWrWmWgWwWaWW8NI",
+          "NK8WwWaWzWrWmWgWwWaWW8KK8zzzzzz78zzzzzz8KK8WwWaWzWrWmWgWwWaWW8KI",
+          "NK8VVVVVVVVVVVVVVVVVV8KK8zzzzzz78zzzzzz8KK8VVVVVVVVVVVVVVVVVV8KI",
+          "II8WWWWWWWWWWWWWWWWWW8II8zzzzzz78zzzzzz8II8WWWWWWWWWWWWWWWWWW8II",
+          "NN88888888888888888888NN8zzzzzz78zzzzzz8NN88888888888888888888NI",
+          "uuuuuuuuuuuuuuuuuuuuuuuu8zzzzzz78zzzzzz8uuuuuuuuuuuuuuuuuuuuuuuu",
+          "tttttttttttttttttttttttt88ww88w788ww88w8tttttttttttttttttttttttt",
+          "ssssssssssssssssssssssss8w88ww878w88ww88ssssssssssssssssssssssss",
+          "nnnnnnnnnnnnnnnnnnnnnnnn8888888888888888nnnnnnnnnnnnnnnnnnnnnnnn"
+        ]
+      ]
+    }
+  }
+};

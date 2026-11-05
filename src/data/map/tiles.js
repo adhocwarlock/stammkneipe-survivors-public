@@ -1,0 +1,23 @@
+export default {
+  "cobble": {"sprite": "ground", "frames": ["cobble_1", "cobble_2", "cobble_3", "cobble_4"], "color": "#2a2a33"},
+  "slab": {"sprite": "ground", "frames": ["slab_1", "slab_2"], "color": "#34343d"},
+  "mosaic": {"sprite": "ground", "frames": ["mosaic_1", "mosaic_2"], "color": "#3a3530"},
+  "plaza": {"sprite": "ground", "frames": ["plaza_1", "plaza_2"], "color": "#30303a"},
+  "rail_h": {"sprite": "ground", "frames": ["rail_h"], "color": "#26262e"},
+  "rail_v": {"sprite": "ground", "frames": ["rail_v"], "color": "#26262e"},
+  "grass": {"sprite": "terrain", "frames": ["grass_1", "grass_1", "grass_2", "grass_3"], "color": "#1b2a36"},
+  "path": {"sprite": "terrain", "frames": ["path_1", "path_2"], "color": "#3e3d48"},
+  "asphalt": {"sprite": "terrain", "frames": ["asphalt_1", "asphalt_2"], "color": "#23232b"},
+  "gravel_raked": {"sprite": "terrain", "frames": ["gravel_raked_1", "gravel_raked_2"], "color": "#8c8a90"},
+  "platform": {"sprite": "terrain", "frames": ["platform_1"], "color": "#55555f", "group": "cut"},
+  "water": {"sprite": "water", "frames": ["water_1", "water_1", "water_2", "water_3"], "color": "#1a2a4a", "auto": "shore", "group": "water"},
+  "pontoon_ns": {"sprite": "pontoon", "frames": ["ns_1", "ns_1", "ns_1", "ns_2"], "color": "#6a5034", "group": "water"},
+  "pontoon_ew": {"sprite": "pontoon", "frames": ["ew_1", "ew_1", "ew_1", "ew_2"], "color": "#6a5034", "group": "water"},
+  "railcut": {"sprite": "railcut", "frames": ["ballast_1", "ballast_2"], "plain": "ballast_plain", "color": "#34343c", "auto": "cut", "group": "cut"},
+  "tunnel_floor": {"sprite": "railcut", "frames": ["tunnel_floor_1"], "color": "#1a1a22"},
+  "tunnel_wall_n": {"sprite": "railcut", "frames": ["tunnel_wall_n"], "color": "#3a2a2a"},
+  "tunnel_wall_s": {"sprite": "railcut", "frames": ["tunnel_wall_s"], "color": "#3a2a2a"},
+  "deck": {"sprite": "wiwili_deck", "frames": ["deck_1", "deck_2"], "color": "#4a4a54"},
+  "deck_edge_n": {"sprite": "wiwili_deck", "frames": ["deck_edge_n"], "color": "#5a4636"},
+  "deck_edge_s": {"sprite": "wiwili_deck", "frames": ["deck_edge_s"], "color": "#5a4636"}
+}

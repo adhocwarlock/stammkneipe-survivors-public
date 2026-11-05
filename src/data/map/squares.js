@@ -1,0 +1,43 @@
+export default {
+  "name": "squares",
+  "offset": [0, 0],
+  "seed": "squares",
+  "ground": [
+    {"type": "mosaic", "rect": [126, 24, 22, 10]},
+    {"type": "plaza", "rect": [127, 25, 20, 8]},
+    {"type": "mosaic", "rect": [180, 37, 14, 9]},
+    {"type": "plaza", "rect": [181, 38, 12, 7]},
+    {"type": "plaza", "rect": [70, 80, 18, 12]},
+    {"type": "slab", "rect": [99, 74, 4, 49]},
+    {"type": "mosaic", "rect": [135, 102, 14, 10]},
+    {"type": "plaza", "rect": [136, 103, 12, 8]},
+    {"type": "plaza", "rect": [168, 98, 14, 10]},
+    {"type": "mosaic", "rect": [189, 95, 20, 14]},
+    {"type": "plaza", "rect": [190, 96, 18, 12]},
+    {"type": "slab", "rect": [208, 87, 6, 36]},
+    {"type": "mosaic", "rect": [68, 4, 24, 15]},
+    {"type": "plaza", "rect": [69, 5, 22, 13]},
+    {"type": "mosaic", "rect": [107, 103, 12, 10]},
+    {"type": "plaza", "rect": [108, 104, 10, 8]},
+    {"type": "slab", "rect": [157, 2, 10, 36]},
+    {"type": "plaza", "rect": [214, 36, 7, 40]}
+  ],
+  "decorations": [
+    ["litfass", 137, 29], ["cafe_set", 131, 27], ["cafe_set", 134, 27], ["cafe_set", 132, 30],
+    ["tree", 127, 25], ["tree", 146, 25], ["tree", 127, 32], ["tree", 146, 32], ["bench", 141, 26], ["bench", 141, 31], ["bike_rack", 143, 34],
+    ["litfass", 187, 41], ["bench", 183, 39], ["bench", 191, 39], ["tree", 181, 44], ["tree", 192, 44], ["bike_rack", 186, 46],
+    ["tree", 72, 82], ["tree", 84, 86], ["bench", 78, 84], ["litfass", 74, 87],
+    ["cafe_set", 77, 89], ["cafe_set", 80, 89], ["cafe_set", 83, 89], ["bike_rack", 86, 81],
+    ["tree", 98, 78, {"repeat": 7, "step": [0, 6]}], ["tree", 103, 81, {"repeat": 7, "step": [0, 6]}],
+    ["bench", 101, 94], ["bike_rack", 100, 110],
+    ["marienbrunnen", 142, 107, {"ox": -8}], ["bench", 137, 104], ["bench", 146, 104], ["tree", 136, 110], ["tree", 148, 103],
+    ["cafe_set", 171, 100], ["cafe_set", 174, 100], ["cafe_set", 177, 100], ["litfass", 179, 105], ["bench", 169, 106],
+    ["marienbrunnen", 199, 102, {"ox": -8}], ["bench", 194, 98], ["bench", 204, 98], ["bench", 194, 106], ["bench", 204, 106],
+    ["tree", 190, 96], ["tree", 207, 96], ["tree", 190, 107], ["tree", 207, 107],
+    ["tree", 222, 92], ["tree", 226, 96], ["tree", 220, 100], ["bench", 224, 99],
+    ["cafe_set", 213, 106], ["cafe_set", 216, 106], ["cafe_set", 214, 109], ["litfass", 186, 90], ["bike_rack", 217, 112],
+    ["litfass", 84, 8], ["cafe_set", 111, 106], ["cafe_set", 114, 106], ["cafe_set", 112, 109], ["bench", 162, 10], ["tree", 158, 16], ["tree", 165, 22],
+    ["bench", 217, 44], ["tree", 215, 52], ["bike_rack", 217, 60]
+  ],
+  "lampLines": [[127, 24, 147, 24, 10], [70, 80, 87, 80, 8], [168, 98, 181, 98, 13], [190, 95, 208, 95, 9]]
+}

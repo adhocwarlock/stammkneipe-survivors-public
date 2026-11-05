@@ -1,0 +1,7 @@
+Announcer voice lines for STAMMKNEIPE SURVIVORS (non-commercial fan game / birthday gift).
+
+Generated offline by tools/voices.py with the built-in Windows text-to-speech voices
+(OneCore "Microsoft Mark" / "Microsoft David" via Windows.Media.SpeechSynthesis, SAPI
+"Microsoft David Desktop" as fallback), then processed (pitch shift, saturation, EQ,
+compression, synthetic reverb) with numpy. No third-party recordings or downloaded audio
+are used. Speech output of the Windows voices is used only for this private, non-commercial game.

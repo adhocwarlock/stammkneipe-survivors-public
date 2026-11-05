@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>STAMMKNEIPE SURVIVORS</title>
+  <style>
+    @font-face { font-family: 'MetalMania'; src: url('vendor/fonts/MetalMania-Regular.ttf') format('truetype'); }
+    @font-face { font-family: 'PressStart'; src: url('vendor/fonts/PressStart2P-Regular.ttf') format('truetype'); }
+    html, body { margin: 0; padding: 0; background: #0d0d10; overflow: hidden; }
+    #game { width: 100vw; height: 100vh; height: 100dvh; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+  <script>
+    // Browsers block ES modules on file://, so explain instead of showing a black screen.
+    if (location.protocol === 'file:') {
+      document.body.innerHTML = '<div style="color:#eee;font:20px monospace;padding:40px;line-height:1.6">'
+        + '<b style="color:#d4af37">STAMMKNEIPE SURVIVORS</b><br><br>'
+        + 'Bitte nicht index.html direkt öffnen.<br>'
+        + 'Starte stattdessen <b>start.bat</b> (Doppelklick) im Spielordner.</div>';
+    }
+  </script>
+  <script>
+    // Show startup/runtime errors on the page itself (instead of a silent black screen).
+    (function () {
+      var box = null, lines = [];
+      function show(msg) {
+        lines.push(String(msg).slice(0, 600));
+        if (!box) {
+          box = document.createElement('pre');
+          box.style.cssText = 'position:fixed;left:0;right:0;bottom:0;max-height:60vh;overflow:auto;margin:0;padding:12px;'
+            + 'background:rgba(40,0,0,.92);color:#ffd0d0;font:12px/1.4 monospace;z-index:99999;white-space:pre-wrap';
+          document.body.appendChild(box);
+        }
+        box.textContent = 'STAMMKNEIPE SURVIVORS – Fehler (bitte Screenshot an den Entwickler):\n\n' + lines.join('\n\n');
+      }
+      window.__larsError = show;
+      window.addEventListener('error', function (e) {
+        if (e.error || e.message) show((e.error && e.error.stack) || (e.message + ' @ ' + e.filename + ':' + e.lineno));
+        else if (e.target && (e.target.src || e.target.href)) show('Datei konnte nicht geladen werden: ' + (e.target.src || e.target.href));
+      }, true);
+      window.addEventListener('unhandledrejection', function (e) {
+        show('Promise: ' + ((e.reason && e.reason.stack) || e.reason));
+      });
+      var origError = console.error;
+      console.error = function () {
+        try { show(Array.prototype.map.call(arguments, function (a) { return (a && a.stack) || String(a); }).join(' ')); } catch (_) {}
+        return origError.apply(console, arguments);
+      };
+      // Module import failures (wrong MIME type, missing file) don't fire any event: watch for the canvas instead.
+      setTimeout(function () {
+        if (location.protocol !== 'file:' && !document.querySelector('#game canvas') && !window.__larsBooted) {
+          show('Das Spiel ist nach 10 s noch nicht gestartet (kein Canvas). Häufig: ein Modul konnte nicht geladen werden.'
+            + '\nBrowser: ' + navigator.userAgent);
+        }
+      }, 10000);
+    })();
+  </script>
+  <script src="vendor/phaser.min.js"></script>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
